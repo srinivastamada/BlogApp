@@ -9,7 +9,7 @@ export class FeedService{
 
      constructor(http:Http){
         this.http = http;
-        this.feedURL = 'https://www.googleapis.com/blogger/v2/blogs/992226187759619576/posts?key=AIzaSyCpHQE_zTZG_aw30Kh9CTaqymRrOTCj4yY';
+        this.feedURL = 'http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&q=http://feeds.feedburner.com/9lessons';
     }
 
      getPosts(){
