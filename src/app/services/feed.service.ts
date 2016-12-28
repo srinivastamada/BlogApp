@@ -9,7 +9,6 @@ export class FeedService{
 
      constructor(http:Http){
         this.http = http;
-     
         this.feedURL = 'http://demos.9lessons.info/blogfeed/index.php';
     }
 

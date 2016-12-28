@@ -6,22 +6,30 @@ import { FeedService } from '../../app/services/feed.service';
   templateUrl: 'feed.html'
 })
 export class FeedPage {
-
+  articles: any;
+  content: any;
+  regex:any;
+  src: any;
   constructor(public navCtrl: NavController, private feedService: FeedService) {
 
   }
-  
-  ngOnInit(){
-    
+
+  ngOnInit() {
     this.getPosts();
   }
 
-  getPosts(){
-     console.log("9lessons Demos Function");
-    this.feedService.getPosts().subscribe(response =>{
-      console.log("9lessons OutPut");
+  getPosts() {
+    console.log("9lessons Demos Function");
+    this.feedService.getPosts().subscribe(response => {
       console.log(response);
+      this.articles = response.responseData.feed.entries;
     })
+  }
+
+  getImage(content) {
+
+
+    return "aa";
   }
 
 
