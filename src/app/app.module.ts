@@ -1,6 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { FeedService } from './services/feed.service';
+//import { FeedService } from '../services/feed.service';
 import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { PopularPage } from '../pages/popular/popular';
