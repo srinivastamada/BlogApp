@@ -1,20 +1,18 @@
-import {Injectable} from "@angular/core";
-import {Http} from '@angular/http';
+import { Injectable } from "@angular/core";
+import { Http } from '@angular/http';
 import 'rxjs/Rx';
 
 @Injectable()
-export class FeedService{
+export class FeedService {
     http: any;
     feedURL: String;
 
-     constructor(http:Http){
+    constructor(http: Http) {
         this.http = http;
-        this.feedURL = 'http://demos.9lessons.info/blogfeed/index.php';
+        this.feedURL = 'http://demos.9lessons.info/blogfeed/';
     }
 
-     getPosts(){
-        return this.http.get(this.feedURL).map(res => res.json());
+    getPosts(tag, limit) {
+        return this.http.get(this.feedURL + '/' + tag + '/' + limit).map(res => res.json());
     }
-
-
 }

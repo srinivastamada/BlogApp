@@ -7,20 +7,17 @@ import { FeedService } from '../../app/services/feed.service';
 })
 export class FeedPage {
   articles: any;
-  content: any;
-  regex: any;
-  src: any;
   constructor(public navCtrl: NavController, private feedService: FeedService) {
 
   }
 
   ngOnInit() {
-    this.getPosts();
+    this.getPosts('php',30);
   }
 
-  getPosts() {
+  getPosts(tag, limit) {
     console.log("9lessons Demos Function");
-    this.feedService.getPosts().subscribe(response => {
+    this.feedService.getPosts(tag, limit).subscribe(response => {
       console.log(response);
       this.articles = response.responseData.feed.entries;
     })

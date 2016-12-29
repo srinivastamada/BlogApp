@@ -11,8 +11,16 @@ import { TabsPage } from '../pages/tabs/tabs';
 })
 export class MyApp {
   rootPage = TabsPage;
-
+  pages: Array<{ title: string }>;;
   constructor(platform: Platform) {
+    this.pages = [
+      { title: 'PHP' },
+      { title: 'Java Script' },
+      { title: 'Angular' },
+      { title: 'React' },
+      { title: 'HTML' },
+      { title: 'Jquery' }
+    ];
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
