@@ -13,40 +13,30 @@
 
 <ion-card *ngFor="let article of articles">
 
-  <ion-item>
+  <ion-item class="item-text-wrap">
     <ion-avatar item-left>
-      <!--<img src="img/marty-avatar.png">-->
+      <img src="../images/SrinivasTamada.png" >
     </ion-avatar>
-    <h2>{{article.title | uppercase}}</h2>
-    <p>{{article.publishedDate}}</p>
+    <h2 class="wrap">{{article.title}}</h2>
+   
   </ion-item>
 
-  <!--<img src="img/advance-card-bttf.png">-->
-
+ <img src="{{getImage(article.content)}}" *ngIf="getImage(article.content)">
+  
   <ion-card-content>
-    <p >{{getImage(article.content)}}
-
+    <p>
+    {{article.contentSnippet}}
     </p>
+     <div>{{article.publishedDate}}</div>
   </ion-card-content>
 
   <ion-row>
-    <ion-col>
+    <ion-col *ngFor="let label of article.categories">
       <button ion-button icon-left clear small>
-        <ion-icon name="thumbs-up"></ion-icon>
-        <div>12 Likes</div>
+        <div>{{label}}</div>
       </button>
     </ion-col>
-    <ion-col>
-      <button ion-button icon-left clear small>
-        <ion-icon name="text"></ion-icon>
-        <div>4 Comments</div>
-      </button>
-    </ion-col>
-    <ion-col center text-center>
-      <ion-note>
-        11h ago
-      </ion-note>
-    </ion-col>
+    
   </ion-row>
 </ion-card>
 

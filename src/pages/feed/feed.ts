@@ -8,7 +8,7 @@ import { FeedService } from '../../app/services/feed.service';
 export class FeedPage {
   articles: any;
   content: any;
-  regex:any;
+  regex: any;
   src: any;
   constructor(public navCtrl: NavController, private feedService: FeedService) {
 
@@ -27,9 +27,9 @@ export class FeedPage {
   }
 
   getImage(content) {
-
-
-    return "aa";
+    var myRegexp = new RegExp(/<img.*?src="(.*?)"/);
+    var match = myRegexp.exec(content);
+    return match[1];
   }
 
 
