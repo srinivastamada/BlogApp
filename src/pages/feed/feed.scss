@@ -1,13 +1,53 @@
-.logoDiv
-{
-    margin:0 auto;
-    text-align: center;
-    .logo{
-    width: 200px; 
-    font-size: 12px; 
+.logoDiv {
+  margin: 0 auto;
+  text-align: center;
+  .logo {
+    width: 200px;
+    font-size: 12px;
+  }
+}
+.wrap {
+  white-space: normal !important;
+}
+
+.tag {
+  background-color: rgba(255, 194, 14, 0.5);
+  font-size: 12px;
+  line-height: 2.83;
+  letter-spacing: -0.2px;
+  color: #444444;
+  padding: 4px 6px 4px 6px;
+  border-radius: 1px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.ion-ios-egg-outline{color: $dark !important}
+.ion-md-heart{color: $red !important}
+.ion-md-contact{color: $blue !important}
+.page-brand{
+.scroll-content{
+  background: url(../assets/images/bg.png) !important;
 }
 }
-.wrap
-{
-    white-space: normal !important;
+
+.menu-inner{
+  color: $white !important;
+  .scroll-content{
+   background-color: $darkBrand !important;
+}
+.toolbar-background{
+   background-color: $darkBrand !important;
+  color: $white !important;
+}
+.toolbar-title{
+   color: $white !important;
+}
+button{
+  background-color: $darkBrand !important;
+   color: $white !important;
+}
+}
+
+.header-brand{
+  border-bottom:solid 3px $darkBrand;
 }

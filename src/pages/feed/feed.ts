@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FeedService } from '../../app/services/feed.service';
+@Injectable()
 @Component({
   selector: 'page-feed',
   templateUrl: 'feed.html'
@@ -8,7 +9,6 @@ import { FeedService } from '../../app/services/feed.service';
 export class FeedPage {
   articles: any;
   constructor(public navCtrl: NavController, private feedService: FeedService) {
-
   }
 
   ngOnInit() {
@@ -29,6 +29,9 @@ export class FeedPage {
     return match[1];
   }
 
-
+  getTagData(tag){
+    this.getPosts(tag, 30);
+   console.log(tag);
+  }
 
 }

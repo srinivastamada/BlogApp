@@ -5,15 +5,17 @@ import { FeedService } from './services/feed.service'
 import { TabsPage } from '../pages/tabs/tabs';
 
 
+
 @Component({
   templateUrl: 'app.html',
   providers: [FeedService]
 })
 export class MyApp {
   rootPage = TabsPage;
-  pages: Array<{ title: string }>;;
+  tags: Array<{ title: string }>;
+
   constructor(platform: Platform) {
-    this.pages = [
+    this.tags = [
       { title: 'PHP' },
       { title: 'Java Script' },
       { title: 'Angular' },
@@ -28,4 +30,14 @@ export class MyApp {
       Splashscreen.hide();
     });
   }
+
+  
+
+  getTagData(tag) {
+   // this.feedPage.getPosts(tag, 30);
+    console.log(tag);
+  }
+
+
+
 }

@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header class="header-brand">
   <ion-navbar>
     
     <button ion-button menuToggle>
@@ -12,7 +12,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="page-brand">
  
 
 <ion-card *ngFor="let article of articles">
@@ -31,16 +31,16 @@
     <p>
     {{article.contentSnippet}}
     </p>
-     <div>{{article.publishedDate}}</div>
+     <div>{{article.publishedDate | date}}</div>
   </ion-card-content>
 
   <ion-row>
-    <ion-col *ngFor="let label of article.categories">
-      <button ion-button icon-left clear small>
-        <div>{{label}}</div>
-      </button>
-    </ion-col>
-    
+   <ion-col>
+      <a class="tag" *ngFor="let tag of article.categories" (click)='getTagData(tag)' >
+      {{tag}}
+      </a>
+   
+   </ion-col>
   </ion-row>
 </ion-card>
 
