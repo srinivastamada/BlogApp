@@ -1,11 +1,10 @@
 
 import { Component, ViewChild } from '@angular/core';
-import { Platform, Nav, NavController } from 'ionic-angular';
+import { Platform, Nav} from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { FeedService } from './services/feed.service'
 import { TabsPage } from '../pages/tabs/tabs';
-import { FeedPage } from '../pages/feed/feed';
-import { PopularPage } from '../pages/popular/popular';
+
 
 
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { FeedPage } from '../feed/feed';
+
 
 @Component({
   templateUrl: 'article.html'

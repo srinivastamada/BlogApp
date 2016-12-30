@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { FeedService } from '../../app/services/feed.service';
 import { ArticlePage } from '../article/article';
 
