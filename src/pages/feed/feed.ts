@@ -1,7 +1,7 @@
-import { Component, Injectable } from '@angular/core';
+import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FeedService } from '../../app/services/feed.service';
-@Injectable()
+
 @Component({
   selector: 'page-feed',
   templateUrl: 'feed.html'
@@ -9,6 +9,7 @@ import { FeedService } from '../../app/services/feed.service';
 export class FeedPage {
   articles: any;
   constructor(public navCtrl: NavController, private feedService: FeedService) {
+
   }
 
   ngOnInit() {
@@ -26,6 +27,8 @@ export class FeedPage {
   getImage(content) {
     var myRegexp = new RegExp(/<img.*?src="(.*?)"/);
     var match = myRegexp.exec(content);
+ 
+    if(match)
     return match[1];
   }
 
@@ -33,5 +36,7 @@ export class FeedPage {
     this.getPosts(tag, 30);
    console.log(tag);
   }
+
+
 
 }

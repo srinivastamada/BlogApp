@@ -13,6 +13,6 @@ export class FeedService {
     }
 
     getPosts(tag, limit) {
-        return this.http.get(this.feedURL + '/' + tag + '/' + limit).map(res => res.json());
+        return this.http.get(this.feedURL + tag + '/' + limit).map(res => res.json());
     }
 }

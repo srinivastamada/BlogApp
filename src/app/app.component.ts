@@ -4,8 +4,6 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 import { FeedService } from './services/feed.service'
 import { TabsPage } from '../pages/tabs/tabs';
 
-
-
 @Component({
   templateUrl: 'app.html',
   providers: [FeedService]
