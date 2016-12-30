@@ -1,6 +1,7 @@
 .logoDiv {
   margin: 0 auto;
   text-align: center;
+  margin-left:-30px;
   .logo {
     width: 200px;
     font-size: 12px;
@@ -21,9 +22,7 @@
   margin-right: 5px;
   margin-bottom: 5px;
 }
-.ion-ios-egg-outline{color: $dark !important}
-.ion-md-heart{color: $red !important}
-.ion-md-contact{color: $blue !important}
+.date{color: #888888}
 .page-brand{
 .scroll-content{
   background: url(../assets/images/bg.png) !important;
@@ -45,6 +44,7 @@
 button{
   background-color: $darkBrand !important;
    color: $white !important;
+   text-transform: uppercase;
 }
 }
 

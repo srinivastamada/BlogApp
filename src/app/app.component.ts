@@ -20,11 +20,15 @@ export class MyApp {
 
   constructor(platform: Platform) {
     this.tags = [
-      { title: 'PHP' },
-      { title: 'JavaScript' },
-      { title: 'AngularJS' },
-      { title: 'ReactJS' },
-      { title: 'HTML5' }
+      { title: 'javascript' },
+      { title: 'php' },
+      { title: 'angularjs' },
+      { title: 'reactjs' },
+      { title: 'HTML5' },
+      { title: 'JSON'},
+      { title: 'jQuery'},
+      { title: 'CSS3'},
+      {title: 'Facebook'}
     ];
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
@@ -37,7 +41,7 @@ export class MyApp {
   
 
   getTagData(tag) {
-   localStorage.setItem('tag',tag.toLowerCase());
+   localStorage.setItem('tag',tag);
    this.nav.setRoot(TabsPage,{tag: tag});
     
   }
