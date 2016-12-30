@@ -6,11 +6,12 @@ import { AboutPage } from '../pages/about/about';
 import { PopularPage } from '../pages/popular/popular';
 import { FeedPage } from '../pages/feed/feed';
 import { TabsPage } from '../pages/tabs/tabs';
-
+import { ArticlePage } from '../pages/article/article';
 @NgModule({
   declarations: [
     MyApp,
     AboutPage,
+    ArticlePage,
     PopularPage,
     FeedPage,
     TabsPage
@@ -22,6 +23,7 @@ import { TabsPage } from '../pages/tabs/tabs';
   entryComponents: [
     MyApp,
     AboutPage,
+    ArticlePage,
     PopularPage,
     FeedPage,
     TabsPage

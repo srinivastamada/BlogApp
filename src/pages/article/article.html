@@ -1,31 +1,25 @@
 <ion-header class="header-brand">
   <ion-navbar>
-    
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
     <ion-title>
       <div class="logoDiv">
-        <img src="assets/images/9lessonsLogo.png" class="logo"/>
-        </div>
-        </ion-title>
+       <img src="assets/images/9lessonsLogo.png" class="logo"/>
+      </div>
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding class="page-brand">
- 
-
-<ion-card *ngFor="let article of articles" >
+<ion-card>
 
   <ion-item class="item-text-wrap">
     <ion-avatar item-left>
       <img src="assets/images/SrinivasTamada.png" >
     </ion-avatar>
-    <h2 class="wrap" (click)="viewArticle(article)">{{article.title}}</h2>
+    <h2 class="wrap">{{article.title}}</h2>
    
   </ion-item>
 
- <img src="{{getImage(article.content)}}" *ngIf="getImage(article.content)">
+ <!--<img src="{{getImage(article.content)}}" *ngIf="getImage(article.content)">-->
   
   <ion-card-content >
     <p>
