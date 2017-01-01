@@ -1,16 +1,14 @@
-
 import { Component, ViewChild } from '@angular/core';
 import { Platform, Nav} from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-import { FeedService } from './services/feed.service'
+import { FeedService } from './services/feed.service';
+import { Helper } from './services/helper.service'
 import { TabsPage } from '../pages/tabs/tabs';
-
-
 
 
 @Component({
   templateUrl: 'app.html',
-  providers: [FeedService]
+  providers: [FeedService, Helper]
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;

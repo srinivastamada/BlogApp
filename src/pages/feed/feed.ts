@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FeedService } from '../../app/services/feed.service';
+import { Helper } from '../../app/services/helper.service';
 import { ArticlePage } from '../article/article';
 
 @Component({
@@ -11,7 +12,7 @@ export class FeedPage {
   articles: any;
   tag: any;
   limit: any;
-  constructor(public navCtrl: NavController, private feedService: FeedService) {
+  constructor(public navCtrl: NavController, private feedService: FeedService,  private helper: Helper) {
 
     this.defaultArticles();
   }
@@ -41,10 +42,7 @@ export class FeedPage {
   }
 
   getImage(content) {
-    var myRegexp = new RegExp(/<img.*?src="(.*?)"/);
-    var match = myRegexp.exec(content);
-    if (match)
-      return match[1];
+     return this.helper.getImage(content);
   }
 
   getTagData(tag) {
