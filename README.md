@@ -7,6 +7,7 @@ Go to terminal or command line.
 
 Execute following commands to run this application.
 
+```
 $ npm install -g cordova ionic
 
 $ git clone https://github.com/srinivastamada/BlogApp.git
@@ -16,5 +17,7 @@ $ cd BlogApp
 $ npm install
 
 $ ionic serve
+
+```
 
 Open your browser http://localhost:8100/
