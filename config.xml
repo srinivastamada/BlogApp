@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.blogapp2814599" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>BlogApp2</name>
-  <description>An awesome Ionic/Cordova app.</description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+  <name>BlogApp</name>
+  <description>An iOS and Android application for Google Blogger hosted websites.</description>
+  <author email="srinivas@9lessons.info" href="http://www.9lessons.info/">Ionic Framework Team</author>
   <content src="index.html"/>
   <access origin="*"/>
   <allow-navigation href="*" />

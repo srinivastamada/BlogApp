@@ -1,7 +1,7 @@
 {
   "name": "ionic-hello-world",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "Srinivas Tamada",
+  "homepage": "http://www.9lessons.info/",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -46,5 +46,5 @@
       "locator": "ios"
     }
   ],
-  "description": "BlogApp2: An Ionic project"
+  "description": "BlogApp: An iOS and Android application for Google Blogger hosted websites"
 }
