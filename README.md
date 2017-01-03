@@ -1,5 +1,5 @@
 # BlogApp
-An iOS and Android application for Google Blogger hosted websites. This package is powered by www.9lessons.info blog feed content.   
+An iOS and Android application for Google Blogger hosted websites. This package is powered by www.9lessons.info blog feed content and developed using Ionic v2 and Angular 2.   
 
 Install Node JS Software
 
