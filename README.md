@@ -1,10 +1,18 @@
 # BlogApp
-A Google Blogger Application for iOS and Android
+An iOS and Android application for Google Blogger hosted websites. This package is powered by www.9lessons.info blog feed content.   
 
-Install Node JS
+Install Node JS Software
 
-cd BlogApp
+Go to terminal or command line.
 
-npm install
+Execute following commands to run this application.
 
-ionic serve
+$ git clone https://github.com/srinivastamada/BlogApp.git
+
+$ cd BlogApp
+
+$ npm install
+
+$ ionic serve
+
+Open your browser http://localhost:8100/
