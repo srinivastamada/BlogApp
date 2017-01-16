@@ -16,13 +16,13 @@
       <ion-avatar item-left>
         <img src="assets/images/SrinivasTamada.png">
       </ion-avatar>
-      <h2 class="wrap">{{article.title}}</h2>
+      <h2 class="wrap">{{article.title.$t}}</h2>
     </ion-item>
     <!--<img src="{{getImage(article.content)}}" *ngIf="getImage(article.content)">-->
     <ion-card-content>
-      <p [innerHTML]='article.content'>
+      <p [innerHTML]='article.content.$t'>
       </p>
-      <div class="date">{{article.publishedDate | date}}</div>
+      <div class="date">{{article.published.$t | date}}</div>
     </ion-card-content>
     <ion-row>
       <ion-col>

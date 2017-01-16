@@ -13,5 +13,9 @@ export class Helper {
         if (match)
             return match[1];
     }
+
+    getContentSnippet(str) {
+        return str.split(/\s+/).slice(0, 50).join(" ")+"...";
+    }
 }
 

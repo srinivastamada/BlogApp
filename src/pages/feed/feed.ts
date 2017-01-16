@@ -36,13 +36,17 @@ export class FeedPage {
   getPosts(tag, limit) {
     console.log("XXXXX " + tag);
     this.feedService.getPosts(tag, limit).subscribe(response => {
-      console.log(response.responseData.feed.entries);
-      this.articles = response.responseData.feed.entries;
+      console.log(response.feed.entry);
+      this.articles = response.feed.entry;
     })
   }
 
   getImage(content) {
      return this.helper.getImage(content);
+  }
+
+  getContentSnippet(content){
+    return this.helper.getContentSnippet(content);
   }
 
   getTagData(tag) {
