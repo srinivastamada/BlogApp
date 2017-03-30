@@ -1,12 +1,11 @@
 # BlogApp
 An iOS and Android application for Google Blogger hosted websites. This package is powered by www.9lessons.info blog feed content and developed using Ionic v2 and Angular 2.   
 
-<table><tr><td width="50%">
-<img src="https://i.imgur.com/XQ4RtzF.png" width="250" alt="Ionic2 Angular2 Typescript Blog Application">
-</td><td><img src="https://i.imgur.com/aoYJDxV.png" width="250" alt="Ionic2 Angular2 Typescript Blog Application"></td></tr></table>
-<table><tr><td width="50%">
-<img src="https://i.imgur.com/yn67uMa.png" width="250" alt="Ionic2 Angular2 Typescript Blog Application">
-</td><td><img src="https://i.imgur.com/OvuO7gV.png" width="250" alt="Ionic2 Angular2 Typescript Blog Application"></td></tr></table>
+<table><tr><td width="25%">
+<img src="https://i.imgur.com/XQ4RtzF.png" width="200" alt="Ionic2 Angular2 Typescript Blog Application">
+</td><td><img src="https://i.imgur.com/aoYJDxV.png" width="200" alt="Ionic2 Angular2 Typescript Blog Application"></td><td width="25%">
+<img src="https://i.imgur.com/yn67uMa.png" width="200" alt="Ionic2 Angular2 Typescript Blog Application">
+</td><td><img src="https://i.imgur.com/OvuO7gV.png" width="200" alt="Ionic2 Angular2 Typescript Blog Application"></td></tr></table>
 
 Install Node JS Software
 
